@@ -1,0 +1,150 @@
+/* Reset em Todas as Tags */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonte e Plano de Fundo Aplicados no Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+/* Centralização do Conteúdo */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Título da Página */
+header {
+    background-color: #48c5ce;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Tamanho da Fonte do Título */
+.title {
+    font-size: 26px;
+}
+
+/* Seção com o Plano de Fundo */
+section {
+    padding: 20px;
+    background-image: url(../IMG/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Div onde Está Alocado o Formulário */
+.formContainer {
+    max-width: 230px;
+    background-color: #ffffffbb;
+    border-radius: 30px;
+    padding: 20px;
+    float: right;
+}
+
+/* Título do Formulário */
+h2 {
+    font-size: 16px;
+}
+
+/* Margem do Título do Formulário, e da Descrição do Evento */
+.mb {
+    margin-bottom: 25px;
+}
+
+/* Configurações dos Inputs e do Select */
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* Configuração Botão Inscreva-se */
+input[type="submit"] {
+    color: #fff;
+    background-color: #48c5ce;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
+/* Configuração Lista de Estados Brasileiros */
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../IMG/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+/* Imagem do Palestrate */
+.picture {
+    width: 160px;
+}
+
+/* Configuração do Rodapé */
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Configuração Geral do Rodapé */
+.description {
+    color: #fff;
+    display: inline-block;
+    text-align: justify;
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+/* Margens da Descrição */
+.description p, .description h3 {
+    margin-bottom: 20px;
+}
+
+/* Tamanho de Fonte do Título do Rodapé */
+.description h3 {
+    font-size: 24px;
+}
+
+/* Cursor do Mouse - Botão Inscreva-se */
+.signup {
+    cursor: pointer;
+}
+
+/* Área Destinada a Configuração Para Dispositivos Móveis */
+@media screen and (max-width: 907px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .formContainer {
+        float: none;
+        margin: auto;
+    }
+
+    .picture {
+        display: block;
+        margin: auto;
+    }
+
+    .description {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .description h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+}
